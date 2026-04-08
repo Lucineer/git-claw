@@ -1,0 +1,19 @@
+{
+  "id": "git-claw",
+  "name": "Git-Claw",
+  "desc": "Cocapn git-agent TUI — commands its own build, talks to Copilot/extensions",
+  "type": "agent",
+  "color": "#22d3ee",
+  "icon": "\u{1f981}",
+  "repo": "https://github.com/Lucineer/git-claw",
+  "capabilities": ["chat", "bash", "read", "write", "edit", "git", "mcp", "memory", "plan-mode", "equipment"],
+  "version": "4.0",
+  "equipment": [
+    {"name": "Keeper Memory", "desc": "Persistent JSONL memory with keyword search and tagging"},
+    {"name": "Plan Mode", "desc": "Write-blocked analysis mode — agent writes to plan file only"},
+    {"name": "MCP Bridge", "desc": "Connect to any MCP server (Copilot, linters, custom tools)"},
+    {"name": "Git Integration", "desc": "status, diff, log, branch from slash commands"},
+    {"name": "Permission Gate", "desc": "Captain auto-approves reads, Admiral approves writes"},
+    {"name": "Context Compaction", "desc": "Auto-summarize when approaching token window limit"}
+  ]
+}

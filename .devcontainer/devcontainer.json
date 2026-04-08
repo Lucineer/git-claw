@@ -1,0 +1,13 @@
+{
+  "name": "Git-Claw v4 — Cocapn Agent",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install rich httpx openai anthropic && echo '\\n\\n\\033[1;36m\\u{1f6a2} Git-Claw v4 ready.\\033[0m' && echo '\\033[2mThe Captain is waiting for orders. Type /help for commands.\\033[0m' && echo '\\033[2mModel: deepseek-chat | Permission: auto (reads free, writes need approval)\\033[0m' && echo '' && echo '\\033[1;32mTo start: python gitclaw.py\\033[0m' && echo '\\033[2mOr one-shot: python gitclaw.py -p \"read main.py and suggest improvements\"\\033[0m' && echo ''",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "github.copilot-chat"]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  }
+}
